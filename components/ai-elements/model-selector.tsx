@@ -167,6 +167,7 @@ export type ModelSelectorLogoProps = Omit<
     | "modelscope"
     | "llama"
     | "scaleway"
+    | "spacexai"
     | "amazon-bedrock"
     | "cerebras"
     // oxlint-disable-next-line typescript-eslint(ban-types) -- intentional pattern for autocomplete-friendly string union

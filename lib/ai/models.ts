@@ -1,11 +1,10 @@
-export const DEFAULT_CHAT_MODEL = "moonshotai/kimi-k2.5";
+export const DEFAULT_CHAT_MODEL = "google/gemini-4-argon";
 
 export const titleModel = {
-  description: "Fast model for title generation",
-  gatewayOrder: ["fireworks", "bedrock"],
-  id: "moonshotai/kimi-k2.5",
-  name: "Kimi K2.5",
-  provider: "moonshotai",
+  description: "Model for title generation",
+  id: "google/gemini-4-argon",
+  name: "Gemini 4 Argon",
+  provider: "google",
 };
 
 export type ModelCapabilities = {
@@ -25,41 +24,40 @@ export type ChatModel = {
 
 export const chatModels: ChatModel[] = [
   {
-    description: "Fast and capable model with tool use",
-    gatewayOrder: ["bedrock", "deepinfra"],
-    id: "deepseek/deepseek-v3.2",
-    name: "DeepSeek V3.2",
-    provider: "deepseek",
+    description: "Google multimodal reasoning model",
+    id: "google/gemini-4-argon",
+    name: "Gemini 4 Argon",
+    provider: "google",
   },
   {
-    description: "Moonshot AI flagship model",
-    gatewayOrder: ["fireworks", "bedrock"],
-    id: "moonshotai/kimi-k2.5",
-    name: "Kimi K2.5",
-    provider: "moonshotai",
+    description: "Meta model for coding and agents",
+    id: "meta/muse-wonder-1.0",
+    name: "Muse Wonder",
+    provider: "meta",
   },
   {
-    description: "Compact reasoning model",
-    gatewayOrder: ["groq", "bedrock"],
-    id: "openai/gpt-oss-20b",
-    name: "GPT OSS 20B",
+    description: "OpenAI reasoning model for coding and work",
+    id: "openai/gpt-6.1-sol",
+    name: "GPT-6.1 Sol",
     provider: "openai",
-    reasoningEffort: "low",
   },
   {
-    description: "Open-source 120B parameter model",
-    gatewayOrder: ["fireworks", "bedrock"],
-    id: "openai/gpt-oss-120b",
-    name: "GPT OSS 120B",
-    provider: "openai",
-    reasoningEffort: "low",
+    description: "Anthropic model for everyday work",
+    id: "anthropic/claude-sonnet-5.5",
+    name: "Claude Sonnet 5.5",
+    provider: "anthropic",
   },
   {
-    description: "Fast non-reasoning model with tool use",
-    gatewayOrder: ["xai"],
-    id: "xai/grok-4.1-fast-non-reasoning",
-    name: "Grok 4.1 Fast",
-    provider: "xai",
+    description: "SpaceXAI model for coding and knowledge work",
+    id: "spacexai/grok-4.7",
+    name: "Grok 4.7",
+    provider: "spacexai",
+  },
+  {
+    description: "Alibaba model for coding and professional work",
+    id: "alibaba/qwen3.8-max",
+    name: "Qwen 3.8 Max",
+    provider: "alibaba",
   },
 ];
 
